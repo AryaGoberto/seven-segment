@@ -1,0 +1,239 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  height: 100vh;
+  font-family: "Quicksand", sans-serif;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  /* background-color: black; */
+}
+
+/* Navbar */
+header.navbar-container {
+  width: 100%;
+  margin-inline: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-block: 1.5rem;
+  z-index: 999;
+  text-align: center;
+  background-color: black;
+}
+
+header.navbar-container .logo span {
+  color: white;
+  font-weight: 700;
+  font-size: 1.5vw;
+}
+header.navbar-container .logo span:hover{
+  color: white;
+  font-weight: 700;
+  font-size: 1.5vw;
+}
+
+header.navbar-container .nav-list ul {
+  padding-left: 0;
+  display: flex;
+  justify-content: center;
+  gap: 2rem 1rem;
+}
+
+header.navbar-container .nav-list li {
+  list-style-type: none;
+  padding-left: 20px;
+}
+header.navbar-container .nav-list li a {
+  text-decoration: none;
+  width: max-content;
+  padding: 0.5rem 1.5rem;
+  font-size: 1.05rem;
+  position: relative;
+  color: white;
+  cursor: pointer;
+  margin: 100px auto;
+  font-weight: 200;
+  border-radius: 999px;
+  transition: all 0.2s ease-in-out;
+}
+
+header.navbar-container .nav-list li a::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  height: 2px;
+  width: 100%;
+  left: 0;
+  background-color: white;
+  transition: 0.3s;
+  transition-timing-function: ease-in-out;
+  transform: scaleX(0);
+}
+header.navbar-container .nav-list li a:hover::after {
+  transform: scaleX(1);
+}
+/* navbar */
+
+/* Main */
+main {
+  max-width: 1200px;
+  width: 100%;
+  margin-inline: auto;
+  padding: 2rem 4rem;
+  flex: 1;
+  display: block;
+  align-items: center;
+}
+
+/* Content */
+main .halaman-satu {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  max-width: 1300px;
+  margin-left: 9vh;
+}
+
+main .halaman-satu .description {
+  flex: 1 1;
+  width: 900px;
+}
+
+main .halaman-satu .description .title {
+  font-size: 3.5rem;
+  margin-block: 1rem;
+  color: black;
+}
+
+main .halaman-satu .description p {
+  line-height: 1.7rem;
+  font-size: 1.2rem;
+  text-align: justify;
+  color: black;
+  width: 500px;
+}
+
+main .halaman-satu .description button {
+  padding: 0.8rem 2.5rem;
+  margin-block-start: 1rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1rem;
+  font-family: "Quicksand", sans-serif;
+  color: white;
+  border: 3px solid transparent;
+  border-radius: 999px;
+  background-color: black;
+  cursor: pointer;
+  transition: all 0.15s ease-in;
+}
+
+main .halaman-satu .description button:hover {
+  border: 3px solid black;
+  color: black;
+  background-color: transparent;
+}
+
+/* Content-2 */
+main #halaman-dua {
+  /* flex: 1;
+  display: flex; */
+  align-items: center;
+  max-width: 1300px;
+  margin-left: 10vh;
+  margin-top: 10vh;
+}
+
+.input-output{
+  display: flex;
+}
+.seven-segment{
+  /* float: right; */
+  border: 1px solid black;
+  margin-left: 300px;
+  
+}
+.segment {
+  width: 150px;
+  height: 30px;
+  background-color: lightgray;
+  border: 1px solid darkgray;
+  margin: 5px;
+  margin: 20px;
+  border-radius: 10px;
+}
+#segmentA, #segmentG, #segmentD{
+  margin-left: 115px;
+}
+#segmentG, #segmentD{
+  margin-top: 30px;
+}
+.flex-satu{
+  display: flex;
+}
+.flex-satu #segmentB,
+.flex-satu #segmentF{
+  transform: rotate(90deg);
+}
+
+.flex-dua{
+  display: flex;
+}
+.flex-dua #segmentE,
+.flex-dua #segmentC{
+  transform: rotate(90deg);
+  margin-top: 40px;
+}
+
+.input {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  margin: auto;
+}
+
+.input input {
+  width: 100%;
+  padding: 10px;
+  font-size: 20px;
+  text-align: center;
+  background-color: black;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.input input[value="Clear"] {
+  background-color: #f44336;
+}
+
+.input input:hover {
+  border: 1px solid black;
+  color: black;
+  background-color: transparent;
+}
+
+ #tampilanBiner{
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+}
+
+/* Footer */
+footer {
+  padding: 20px;
+  font-size: 18px;
+  color: #fff;
+  background-color: black;
+  text-align: center;
+}
