@@ -1,88 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Seven Segment</title>
-    <!-- My CSS -->
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
-  <body>
-    <header class="navbar-container">
-      <div class="logo">
-        <span>AG</span>
-      </div>
-      <nav class="nav-list">
-        <ul>
-          <li><a href="#halaman-dua">About</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <div class="content">
-        <article>
-          <div class="halaman-satu">
-            <div class="description">
-              <h1 class="title">
-                Seven Segment Project
-              </h1>
-              <p>
-                Seven segment adalah jenis display numerik yang terdiri dari tujuh segmen, dirancang untuk menampilkan angka 0 hingga 9. Setiap segmen dapat diaktifkan secara terpisah untuk membentuk digit yang diinginkan, membuatnya ideal untuk aplikasi tampilan angka sederhana dalam elektronika digital.
-              </p>
-              <a href="#halaman-dua"><button>Lebih lanjut</button></a>
-            </div>
-            <div class="image">
-              <img src="img/Mechanical 7-segment display.gif" alt="asas">
-            </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Seven Segment</title>
+  <!-- My CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="navbar-container">
+    <div class="logo">
+      <span>AG</span>
+    </div>
+    <nav class="nav-list">
+      <ul>
+        <li><a href="#halaman-dua">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="content">
+      <article>
+        <div class="halaman-satu">
+          <div class="description">
+            <h1 class="title">Seven Segment Project</h1>
+            <p>
+              Seven segment adalah jenis display numerik yang terdiri dari tujuh segmen, dirancang untuk menampilkan angka 0 hingga 9. Setiap segmen dapat diaktifkan secara terpisah untuk membentuk digit yang diinginkan, membuatnya ideal untuk aplikasi tampilan angka sederhana dalam elektronika digital.
+            </p>
+            <a href="#halaman-dua"><button>Lebih lanjut</button></a>
           </div>
-        </article>
-        <!-- P -->
-
-        <article id="halaman-dua">
-          <h1 class="title" >Projects</h1>
-          <div class="input-output">
-            <div class="input">
-              <input type="button" value="0" onclick="displayDigit(0)">
-              <input type="button" value="1" onclick="displayDigit(1)">
-              <input type="button" value="2" onclick="displayDigit(2)">
-              <input type="button" value="3" onclick="displayDigit(3)">
-              <input type="button" value="4" onclick="displayDigit(4)">
-              <input type="button" value="5" onclick="displayDigit(5)">
-              <input type="button" value="6" onclick="displayDigit(6)">
-              <input type="button" value="7" onclick="displayDigit(7)">
-              <input type="button" value="8" onclick="displayDigit(8)">
-              <input type="button" value="9" onclick="displayDigit(9)">
-              <input type="button" value="Clear" onclick="clearDisplay()">
-            </div>
-        <div class="object">
-          <div class="seven-segment">
-            <div id="segmentA" class="segment">A</div>
-    
-            <div class="flex-satu">
-              <div id="segmentF" class="segment">F</div>
-              <div id="segmentB" class="segment">B</div>
-            </div>
-            <div id="segmentD" class="segment">D</div>
-      
-            <div class="flex-dua">
-              <div id="segmentE" class="segment">E</div>
-              <div id="segmentC" class="segment">C</div>
-            </div>
-            <div id="segmentG" class="segment">G</div>
-
-            <p id="tampilanBiner"></p>
+          <div class="image">
+            <img src="assets/Mechanical 7-segment display.gif" alt="asas">
           </div>
         </div>
+      </article>
+
+      <article id="halaman-dua">
+        <h1 class="title">Projects</h1>
+        <div class="input-output">
+          <div class="input">
+            <input type="button" value="0" onclick="displayDigit(0)">
+            <input type="button" value="1" onclick="displayDigit(1)">
+            <input type="button" value="2" onclick="displayDigit(2)">
+            <input type="button" value="3" onclick="displayDigit(3)">
+            <input type="button" value="4" onclick="displayDigit(4)">
+            <input type="button" value="5" onclick="displayDigit(5)">
+            <input type="button" value="6" onclick="displayDigit(6)">
+            <input type="button" value="7" onclick="displayDigit(7)">
+            <input type="button" value="8" onclick="displayDigit(8)">
+            <input type="button" value="9" onclick="displayDigit(9)">
+            <input type="button" value="Clear" id="clear" onclick="clearDisplay()">
           </div>
-     
-        </article>
-      </div>
-    </main>
-    <footer>
-      <p>
-        Arya Gunavaro Goberto | D121231002 | Tugas Akhir Sistem Digital
-      </p>
-    </footer>
-    <script src="script.js"></script>
-  </body>
+          <div class="object">
+            <div class="seven-segment">
+              <div id="segmentA" class="segment">A</div>
+              <div class="flex-satu">
+                <div id="segmentF" class="segment">F</div>
+                <div id="segmentB" class="segment">B</div>
+              </div>
+              <div id="segmentD" class="segment">D</div>
+              <div class="flex-dua">
+                <div id="segmentE" class="segment">E</div>
+                <div id="segmentC" class="segment">C</div>
+              </div>
+              <div id="segmentG" class="segment">G</div>
+
+              <p id="tampilanBiner"></p>
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
+  </main>
+
+  <footer>
+    <p>
+      Arya Gunavaro Goberto | D121231002 | Tugas Akhir Sistem Digital
+    </p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
 </html>
